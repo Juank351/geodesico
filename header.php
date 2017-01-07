@@ -16,7 +16,8 @@ $siteUrl = esc_url( home_url( '/' ) );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Servicios Geodesicos Generales S.A.C</title>
+    <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; <?php } ?> <?php wp_title(); ?></title>
+    <!--<title>Servicios Geodesicos Generales S.A.C</title>-->
     <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
       <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <?php endif; ?>
