@@ -1,0 +1,330 @@
+/*
+Theme Name: Servicios Generales Geodesicos
+Theme URI: http://www.sgg.pe
+Author: Alex Aragón
+Author URI: https://blenderperu.org/
+Description: Diseño para el sitio web de la empresa Servicios Generales Geodesicos S.A.C.
+Version: 1
+*/
+
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+header{
+	border-bottom: rgba(0,0,0,0.05) 1px solid;
+	box-shadow: 0 0 2px rgba(0,0,0,.1) !important;
+	background: url(images/bg-header.png) no-repeat #01A89E 0 0;
+	border-bottom: 4px solid #007D77;
+}
+p{
+	line-height: 26px;
+}
+a{
+	color: #007D77;
+}
+#top-bar{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+}
+#nav-menu.navbar-default{
+	background: transparent;
+	border:none;
+	margin-bottom: 20px;
+}
+#nav-menu .logo{
+	height: 90px;
+	line-height: 71px;
+	overflow: hidden;
+	display: inline-block;
+	padding-left: 30px;
+}
+#nav-menu .navbar-right{
+	margin-top: 25px;
+}
+#nav-menu.navbar-default .navbar-nav li{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#nav-menu.navbar-default .navbar-nav li a{
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 5px;
+}
+#nav-menu.navbar-default .navbar-nav li.active a{
+	background: #007D77;
+}
+#nav-menu.navbar-default .navbar-nav li a:hover{
+	border-bottom: 4px solid #FFCC00;
+}
+.social-icon i {
+	display: block;
+	line-height: 30px;
+	position: relative;
+}
+.social-icon .icon {
+	margin: 0 5px 5px 0;
+	width: 30px;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px !important;
+	color: #000;
+	text-shadow: none;
+	border-radius: 3px;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #FFF;
+	background: #FFF;
+}
+.social-icon .icon:hover{
+	text-decoration: none;
+}
+.social-icon .icon.facebook:hover{
+	background: #3B5998;
+	color: #FFF;
+	border-color: #3B5998;
+}
+.social-icon .icon.twitter:hover{
+	background: #1DA1F2;
+	color: #FFF;
+	border-color: #1DA1F2;
+}
+.social-icon .icon.border-round{
+	border-radius: 50%;
+}
+#top-bar a{
+	display: inline-block;
+	vertical-align: middle;
+}
+.text-home{
+	background: #1a4a7a;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFF;
+	margin-bottom: 20px;
+
+}
+.text-home h1{
+	margin: 0;
+	padding: 0;
+	font-size: 28px;
+	font-weight: bold;
+}
+.carousel-caption{
+	background-color: #007D77;
+	right: 10%;
+	left: 45%;
+	padding-bottom: 15px;
+	bottom: 60px;
+	text-align: right;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom: 4px solid #01A89E;
+}
+.carousel-caption h1{
+	margin: 0;
+	padding: 0;
+	font-size: 40px;
+	font-weight: bold;
+}
+.carousel-caption p{
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+.section-title{
+	font-size: 20px;
+	font-weight: bold;
+	height: 40px;
+	text-transform: uppercase;
+	color: #007D77;
+	background: url(images/bar.png) no-repeat 0 22px;
+	margin-bottom: 20px;
+}
+.notes{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.notes .item{
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+}
+.notes .item .title{
+	font-weight: bold;
+}
+.parrafo{
+	padding: 25px;
+
+}
+.divisor-lateral{
+	border-left: 1px solid #CCC;
+	padding-left: 30px;
+}
+footer{
+	background-color: #1a4a7a;
+	color: #FFF;
+	border-top: 4px solid #007D77;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+footer p{
+	padding: 0;
+	margin: 0;
+}
+footer .social-icon .icon{
+	background-color: #FFF;
+	border:1px solid #FFF;
+	color: #1a4a7a;
+}
+footer .social-icon .icon:hover{
+	text-decoration: none;
+	background-color: #FFCC00;
+}
+.services{
+	margin-bottom: 20px;
+}
+.services img{
+	border: 1px solid #1A4A7A;
+}
+.grayscale{
+	filter: grayscale(100%);
+ 	-webkit-filter: grayscale(100%);
+ 	transition:filter 0.4s;
+ 	-webkit-transition:-webkit-filter 1s;
+}
+.grayscale:hover{
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+.galery{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.carousel-control{
+	color: #01A89E;
+}
+.btn-primary{
+	background-color: #007D77;
+	border-color: #007D77;
+}
+.inside-header{
+	height: 150px;
+	position: relative;
+}
+.inside-header .title{
+	background: #01A89E;
+	padding: 5px;
+	color: #FFF;
+	bottom: 0;
+	font-size: 32px;
+	font-weight: bold;
+	position: absolute;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-left: 6px solid #FFCC00;
+}
+.inside-page p{
+	margin-bottom: 1em;
+	font-size: 16px;
+	color: #666;
+	line-height: 30px;
+	display: block;
+	width: 100%;
+}
+.inside-page{
+	padding: 40px 20px;
+}
+/* Large desktop */
+@media (min-width: 1200px) { ... }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	header{
+		border-bottom: rgba(0,0,0,0.05) 1px solid;
+		box-shadow: 0 0 2px rgba(0,0,0,.1) !important;
+		background: url(images/bg-header.png) no-repeat #01A89E -100px 0;
+	}
+	#nav-menu.navbar-default .navbar-nav li{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	#nav-menu .logo{
+		padding-left: 5px;
+	}
+	.text-home h1 {
+		margin: 0;
+		padding: 0;
+		font-size: 22px;
+		font-weight: bold;
+	}
+	.carousel-caption {
+		background-color: #007D77;
+		right: 10%;
+		left: 40%;
+		padding-bottom: 15px;
+		bottom: 60px;
+		text-align: right;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.carousel-caption h1 {
+		margin: 0;
+		padding: 0;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	.carousel-caption p {
+		font-size: 16px;
+		margin: 0;
+		padding: 0;
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.text-home h1{
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.carousel-caption{
+		display: none;
+	}
+	.section-title{
+		margin-top: 20px;
+	}
+	.divisor-lateral{
+		border-left: none;
+		padding-left: 10px;
+	}
+	footer .text-right{
+		text-align: center;
+	}
+	.social-icon{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	header{
+		background: #FFF;
+	}
+	#nav-menu.navbar-default .navbar-collapse{
+		background: #01A89E;
+		margin-top: 20px;
+	}
+}
