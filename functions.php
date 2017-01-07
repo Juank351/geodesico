@@ -172,3 +172,42 @@ function getImgPost($size = 'thumbnail') {
     $imgDestacada = wp_get_attachment_image_src( $thumbID, $size ); // Sustituir por thumbnail, medium, large o full
     return $imgDestacada[0]; // 0 = ruta, 1 = altura, 2 = anchura, 3 = boolean
 }
+
+/*
+*Funcion widgets para editar en pie de pagina de la direccion.
+*Ejemplo de utilizacion: 
+*/
+function registrarWidget () {
+
+    register_sidebar( array(
+        'name'          => 'Footer derecha',
+        'id'            => 'footer_derecha',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="rounded">',
+        'after_title'   => '</h4>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Titulo principal',
+        'id'            => 'titulo_principal',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h1 class="rounded">',
+        'after_title'   => '</h1>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Parrafo principal',
+        'id'            => 'parrafo_principal',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h1 class="rounded">',
+        'after_title'   => '</h1>',
+    ) );
+
+}
+add_action( 'widgets_init', 'registrarWidget' );
+?>
+
+

@@ -51,14 +51,24 @@
 
 
       </div>
-      <div class="text-home"><h1>Servicios Geodesicos Generales S.A.C</h1></div>
+      <?php if ( is_active_sidebar( 'titulo_principal' ) ) : ?>
+            <div class="text-home" role="complementary">
+            <?php dynamic_sidebar( 'titulo_principal' ); ?>
+            </div><!-- #primary-sidebar -->
+            <?php endif; ?>
+      <!--<div class="text-home"><h1>Servicios Geodesicos Generales S.A.C</h1></div>-->
       <div class="welcome">
         <div class="row">
           <div class="col-md-6 col-sm-5">
             <div class="section-title">Bienvenidos</div>
-            <div class="parrafo">
+            <?php if ( is_active_sidebar( 'parrafo_principal' ) ) : ?>
+            <div class="parrafo" role="complementary">
+            <?php dynamic_sidebar( 'parrafo_principal' ); ?>
+            </div><!-- #primary-sidebar -->
+            <?php endif; ?>
+            <!--<div class="parrafo">
               <p>SERVICIOS GEODESICO GENERALES S.A.C es una Empresa de Ingeniería en el área de geofísica, geología, geodesia y computación. Desde sus inicios ha estado otorgando asistencia técnica y servicios en el área de prospección minera y en obras de Ingeniería Civil a las más diversas empresas privadas y estatales.</p>
-            </div>
+            </div>-->
           </div>
           <div class="col-md-6 col-sm-7">
             <div class="divisor-lateral">

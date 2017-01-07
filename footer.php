@@ -11,11 +11,12 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <h4>Dirección</h4>
-              <p>Av. Guardia Civil N° 388 Dpto 101</p>
-              <p>Urb. Corpac Lima - San Isidro</p>
-              <p>FONO: (1)756-8925</p>
-            </div>
+            <?php if ( is_active_sidebar( 'footer_derecha' ) ) : ?>
+            <div class="widget-footer-derecha" role="complementary">
+            <?php dynamic_sidebar( 'footer_derecha' ); ?>
+            </div><!-- #primary-sidebar -->
+            <?php endif; ?>
+              </div>
             <div class="col-md-6 text-right">
                 <div href="#" class="social-icon text-right">
 
