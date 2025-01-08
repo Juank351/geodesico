@@ -1,1 +1,1 @@
-geodesico - HOLA PAPU :V
+geodesico - HOLA PAPU :V e wey
